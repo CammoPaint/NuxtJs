@@ -1,15 +1,15 @@
 <template>
   <div>
     <b-navbar toggleable="lg" type="dark" variant="info">
-      <b-navbar-brand href="/">NavBar</b-navbar-brand>
+      <b-navbar-brand href="/">DRY Hire</b-navbar-brand>
 
       <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
 
       <b-collapse id="nav-collapse" is-nav>
         <b-navbar-nav>
           <b-nav-item to="/" exact>Home</b-nav-item>
-          <b-nav-item to="/users" exact>Users</b-nav-item>
-          <b-nav-item to="/posts" exact>Posts</b-nav-item>
+          <b-nav-item to="/products" exact>Products</b-nav-item>
+          <b-nav-item to="/categories" exact>Categories</b-nav-item>
         </b-navbar-nav>
 
         <!-- Right aligned nav items -->

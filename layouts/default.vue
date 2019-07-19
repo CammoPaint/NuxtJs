@@ -1,17 +1,15 @@
 <template>
   <div>
-    <navigation />
+    <nav-bar />
     <nuxt />
   </div>
 </template>
 <script>
-import Logo from "~/components/Logo.vue";
-import Navigation from "~/components/Navigation.vue";
+import NavBar from "~/components/NavBar.vue";
 
 export default {
   components: {
-    Logo,
-    Navigation
+    NavBar
   }
 };
 </script>

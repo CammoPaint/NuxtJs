@@ -44,8 +44,7 @@ export default {
  */
   axios: {
     // See https://github.com/nuxt-community/axios-module#options
-    // Set the baseURL to JSONPlaceholder API
-    baseURL: 'https://jsonplaceholder.typicode.com/'
+    baseURL: 'https://hirex-staging-api.azurewebsites.net'
   },
   /*
   ** Build configuration
