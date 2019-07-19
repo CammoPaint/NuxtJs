@@ -18,9 +18,9 @@
         <div class="row">
           <div class="col-xs-12 col-sm-12 col-md-6">
             <h5>Price</h5>
-            <p>{{data.result.basePrice | currency: 'AUD'}} / day</p>
+            <p>{{data.result.basePrice}} / day</p>
             <h5 v-If="data.result.bond>0">Security Deposit</h5>
-            <p v-If="data.result.bond>0">{{data.result.bond | currency: 'AUD'}} / hire</p>
+            <p v-If="data.result.bond>0">{{data.result.bond}} / hire</p>
             <h5>Supplier</h5>
             <p>{{data.result.organisationName}}</p>
           </div>
