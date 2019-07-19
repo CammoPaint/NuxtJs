@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <h1>{{name}}</h1>
+    <h1>Users</h1>
     <div class="row">
       <div class="col-sm-4 card" v-for="user of users" :key="user.id">
         <div class="card-body">
@@ -12,6 +12,7 @@
             <br />
             {{user.address.zipcode}}
           </p>
+          <b-button :to="{ name: 'users-id', params: { id: user.id }}" variant="primary">More</b-button>
         </div>
       </div>
     </div>
@@ -19,25 +20,16 @@
 </template>
 
 <script>
-import UserService from "../services/UserService";
-
 export default {
   data() {
     return {
-      name: "Users",
-      users: [],
-      errors: []
+      users: []
     };
   },
-  created: function() {
-    UserService.get(
-      data => {
-        this.users = data;
-      },
-      response => {
-        this.errors.push(response.errors);
-      }
-    );
+  async asyncData(ctx) {
+    return {
+      users: await ctx.app.$repositories.users.index()
+    };
   }
 };
 </script>

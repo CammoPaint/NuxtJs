@@ -9,6 +9,7 @@
         <b-navbar-nav>
           <b-nav-item to="/" exact>Home</b-nav-item>
           <b-nav-item to="/users" exact>Users</b-nav-item>
+          <b-nav-item to="/posts" exact>Posts</b-nav-item>
         </b-navbar-nav>
 
         <!-- Right aligned nav items -->

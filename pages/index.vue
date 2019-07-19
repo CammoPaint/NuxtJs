@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <h1>{{name}}</h1>
+    <h1>Home</h1>
     <div class="row">
       <b-card
         title="Card Title"
@@ -19,25 +19,16 @@
 </template>
 
 <script>
-import PhotoService from "../services/PhotoService";
-
 export default {
   data() {
     return {
-      name: "Photos",
-      photos: [],
-      errors: []
+      photos: []
     };
   },
-  created: function() {
-    PhotoService.get(
-      data => {
-        this.photos = data;
-      },
-      response => {
-        this.errors.push(response.errors);
-      }
-    );
+  async asyncData(ctx) {
+    return {
+      photos: await ctx.app.$repositories.photos.index()
+    };
   }
 };
 </script>
