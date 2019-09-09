@@ -38,6 +38,7 @@ export default {
     // Doc: https://bootstrap-vue.js.org/docs/
     'bootstrap-vue/nuxt',
     '@nuxtjs/axios',
+    'nuxt-fontawesome'
   ],
   /*
  ** Axios module configuration
@@ -45,6 +46,14 @@ export default {
   axios: {
     // See https://github.com/nuxt-community/axios-module#options
     baseURL: 'https://hirex-staging-api.azurewebsites.net'
+  },
+  fontawesome: {
+    imports: [
+        {
+          set: '@fortawesome/free-solid-svg-icons',
+          icons: ['fas']
+        },
+    ],
   },
   /*
   ** Build configuration
