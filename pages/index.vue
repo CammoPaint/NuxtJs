@@ -6,7 +6,7 @@
       <div class="container">
         <div class="row">
           <div class="col-xl-9 mx-auto">
-            <h1 class="mb-5">Hire gear for every adventure</h1>
+            <h1 class="mb-5 text-white">Hire gear for every adventure</h1>
           </div>
           <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
             <form>
@@ -27,45 +27,20 @@
         </div>
       </div>
     </header>
+              
     <section class="features-icons text-center bg-light">
       <div class="container">
         <div class="row">
-          <div class="col-lg-4">
+          <div class="col-lg-4" v-for="category of categories" :key="category.id">
             <nuxt-link
-              :to="{ name: 'categories-id', params: { id: 'ce0b21d7-eae2-463b-9dfe-7e51e1628f67' }}"
+              :to="{ name: 'categories-id', params: { id: category.id }}"
             >
               <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3 text-primary">
                 <div class="features-icons-icon">
-                  <font-awesome-icon icon="hiking" style="font-size: 60px" class="primary" />
+                  <font-awesome-icon :icon="category.icon" style="font-size: 60px" class="primary" />
                 </div>
-                <h3>Camping and Hiking</h3>
-                <p class="lead mb-0">From the rainforest to the beach and everywhere in between.</p>
-              </div>
-            </nuxt-link>
-          </div>
-          <div class="col-lg-4">
-            <nuxt-link
-              :to="{ name: 'categories-id', params: { id: '09070ca5-bde3-4af8-ab28-6d6087331fbf' }}"
-            >
-              <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3 text-primary">
-                <div class="features-icons-icon">
-                  <font-awesome-icon icon="ship" style="font-size: 60px" />
-                </div>
-                <h3>Boating and Fishing</h3>
-                <p class="lead mb-0">Cruise the bay, ride the wake, or reel in the big one offshore.</p>
-              </div>
-            </nuxt-link>
-          </div>
-          <div class="col-lg-4">
-            <nuxt-link
-              :to="{ name: 'categories-id', params: { id: '78942c02-5d6a-4c68-9431-30c8d4b5a106' }}"
-            >
-              <div class="features-icons-item mx-auto mb-0 mb-lg-3 text-primary">
-                <div class="features-icons-icon">
-                  <font-awesome-icon icon="umbrella-beach" style="font-size: 60px" />
-                </div>
-                <h3>Surf and Ski</h3>
-                <p class="lead mb-0">Carve up the snow in Thredbo or ride the waves at Bells Beach.</p>
+                <h3>{{category.name}}</h3>
+                <p class="lead mb-0">{{category.title}}</p>
               </div>
             </nuxt-link>
           </div>
@@ -148,7 +123,7 @@
           </div>
         </div>
       </div>
-      <section class="features-icons text-center" style="background: #17a2b8">
+      <section class="features-icons text-center">
         <div class="container-fluid text-white">
           <div class="row">
             <div class="col-lg-12">
@@ -167,72 +142,20 @@
         <div class="row">
           <div class="col-lg-12">
             <div class="row">
-              <div class="col-lg-3 col-md-6 mb-4">
-                <div class="card h-100">
-                  <a href="#">
-                    <img
-                      class="card-img-top"
-                      src="https://images.unsplash.com/photo-1506527240747-720a3e17b910?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1052&q=80"
-                      alt
-                    />
-                  </a>
-                  <div class="card-body">
-                    <h4 class="card-title">
-                      <a href="#">Sailing in Moreton Bay</a>
-                    </h4>
-                  </div>
-                </div>
+              <div class="col-lg-3 col-md-6 mb-4" v-for="post of posts" :key="post.id">
+            <nuxt-link
+              :to="{ name: 'posts-id', params: { id: post.id }}"
+            >
+            <div class="card h-100">
+                <img class="card-img-top" :src="post.imageUrl" alt />
+              <div class="card-body">
+                <h4 class="card-title">
+                  {{post.title}}
+                </h4>
               </div>
-
-              <div class="col-lg-3 col-md-6 mb-4">
-                <div class="card h-100">
-                  <a href="#">
-                    <img
-                      class="card-img-top"
-                      src="https://images.unsplash.com/photo-1533243216203-8c08406d4583?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1651&q=80"
-                      alt
-                    />
-                  </a>
-                  <div class="card-body">
-                    <h4 class="card-title">
-                      <a href="#">Cradle Mountain and Lake Saint Claire</a>
-                    </h4>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-lg-3 col-md-6 mb-4">
-                <div class="card h-100">
-                  <a href="#">
-                    <img
-                      class="card-img-top"
-                      src="https://images.unsplash.com/photo-1505873346750-69ce3daeb225?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"
-                      alt
-                    />
-                  </a>
-                  <div class="card-body">
-                    <h4 class="card-title">
-                      <a href="#">Thredbo Ski-in, Ski-out</a>
-                    </h4>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-3 col-md-6 mb-4">
-                <div class="card h-100">
-                  <a href="#">
-                    <img
-                      class="card-img-top"
-                      src="https://images.unsplash.com/photo-1500520198921-6d4704f98092?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=925&q=80"
-                      alt
-                    />
-                  </a>
-                  <div class="card-body">
-                    <h4 class="card-title">
-                      <a href="#">Hawaii on a Budget</a>
-                    </h4>
-                  </div>
-                </div>
-              </div>
+            </div>
+            </nuxt-link>
+          </div>
             </div>
             <!-- /.row -->
           </div>
@@ -240,11 +163,14 @@
         </div>
       </section>
     </div>
+
   </div>
   <!-- /.container -->
 </template>
 
 <script>
+import json from "~/static/data.json";
+
 export default {
   data() {
     return {
@@ -253,7 +179,9 @@ export default {
   },
   async asyncData(ctx) {
     return {
-      products: await ctx.app.$repositories.products.index()
+      categories: json.productCategories,
+      products: await ctx.app.$repositories.products.index(),
+      posts: json.posts.slice(0,4)
     };
   }
 };

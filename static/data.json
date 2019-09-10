@@ -1,57 +1,90 @@
 {
+    "productCategories" :[
+        {
+            "id":"ce0b21d7-eae2-463b-9dfe-7e51e1628f67",
+            "imageUrl": "https://images.unsplash.com/photo-1464536194743-0c49f0766ef6",
+            "name": "Camping and Hiking",
+            "title": "From the rainforest to the beach and everywhere in between.",
+            "icon": "hiking"
+        },
+        {
+            "id":"09070ca5-bde3-4af8-ab28-6d6087331fbf",
+            "imageUrl": "https://images.unsplash.com/photo-1525721653822-f9975a57cd4c",
+            "name": "Boating and Fishing",
+            "title": "Cruise the bay, ride the wake, or reel in the big one offshore.",
+            "icon": "ship"
+        },
+        {
+            "id":"78942c02-5d6a-4c68-9431-30c8d4b5a106",
+            "imageUrl": "https://images.unsplash.com/photo-1455729552865-3658a5d39692",
+            "name": "Surf and Ski",
+            "title": "Carve up the snow in Thredbo or ride the waves at Bells Beach.",
+            "icon": "umbrella-beach"
+        }
+        
+    ],
     "posts": [
         {
             "id": "ce0b21d7-eae2-463b-9dfe-7e51e1628f67",
             "productCategoryId": "ce0b21d7-eae2-463b-9dfe-7e51e1628f67",
             "title": "Best Hikes in Southeast Queensland",
+            "content": "Here are list of hikes",
             "imageUrl": "https://images.unsplash.com/photo-1464536194743-0c49f0766ef6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"
         },
         {
             "id": "ce0b21d7-eae2-463b-9dfe-7e51e1628f68",
             "productCategoryId": "ce0b21d7-eae2-463b-9dfe-7e51e1628f67",
             "title": "Glamping in the Darling Downs",
+            "content": "Camping with a twist",
             "imageUrl": "https://images.unsplash.com/photo-1545153996-9419dd2acf66?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1351&q=80"
         },
         {
             "id": "ce0b21d7-eae2-463b-9dfe-7e51e1628f69",
             "productCategoryId": "ce0b21d7-eae2-463b-9dfe-7e51e1628f67",
             "title": "Hike USA on a shoe-string",
+            "content": "Great views without the price",
             "imageUrl": "https://images.unsplash.com/photo-1445308394109-4ec2920981b1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1353&q=80"
         },
         {
             "id": "09070ca5-bde3-4af8-ab28-6d6087331fbf",
             "productCategoryId": "09070ca5-bde3-4af8-ab28-6d6087331fbf",
             "title": "Best places to fish in Queensland",
+            "content": "Love fish, here's where to get them",
             "imageUrl": "https://images.unsplash.com/photo-1449158672805-f0deda6782ec?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1267&q=80"
         },
         {
             "id": "09070ca5-bde3-4af8-ab28-6d6087331fbg",
             "productCategoryId": "09070ca5-bde3-4af8-ab28-6d6087331fbf",
             "title": "Tips for buying gear for off-shore fishing",
+            "content": "When the deep blue calls",
             "imageUrl": "https://images.unsplash.com/photo-1551131618-3f0a5cf594b4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1351&q=80"
         },
         {
             "id": "09070ca5-bde3-4af8-ab28-6d6087331fbi",
             "productCategoryId": "09070ca5-bde3-4af8-ab28-6d6087331fbf",
             "title": "How to load you fishing kayak",
+            "content": "When you need everything on your kayak",
             "imageUrl": "https://images.unsplash.com/photo-1525721653822-f9975a57cd4c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"
         },
         {
             "id": "78942c02-5d6a-4c68-9431-30c8d4b5a106",
             "productCategoryId": "78942c02-5d6a-4c68-9431-30c8d4b5a106",
             "title": "Best beaches in Australia",
+            "content": "Get wet here",
             "imageUrl": "https://images.unsplash.com/photo-1505937059382-aab581fd88c8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"
         },
         {
             "id": "78942c02-5d6a-4c68-9431-30c8d4b5a107",
             "productCategoryId": "78942c02-5d6a-4c68-9431-30c8d4b5a106",
             "title": "Late season skiing in Thredbo",
+            "content": "Ski now",
             "imageUrl": "https://images.unsplash.com/photo-1551698618-1dfe5d97d256?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"
         },
         {
             "id": "78942c02-5d6a-4c68-9431-30c8d4b5a108",
             "productCategoryId": "78942c02-5d6a-4c68-9431-30c8d4b5a106",
             "title": "Wakeboarding in Queensland",
+            "content": "Lakes, dams and rivers",
             "imageUrl": "https://images.unsplash.com/photo-1484634410561-aa51b83c27d6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"
         }
     ]

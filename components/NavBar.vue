@@ -7,10 +7,6 @@
 
       <b-collapse id="nav-collapse" is-nav>
         <b-navbar-nav>
-          <b-nav-item to="/" exact>Home</b-nav-item>
-          <b-nav-item to="/products" exact>Gear</b-nav-item>
-          <b-nav-item to="/categories" exact>Categories</b-nav-item>
-          <b-nav-item to="/blog" exact>Blog</b-nav-item>
         </b-navbar-nav>
 
         <!-- Right aligned nav items -->
