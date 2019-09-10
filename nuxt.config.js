@@ -40,19 +40,23 @@ export default {
     '@nuxtjs/axios',
     'nuxt-fontawesome'
   ],
+  bootstrapVue: {
+    bootstrapCSS: false, // Or `css: false`
+    bootstrapVueCSS: false // Or `bvCSS: false`
+  },
   /*
  ** Axios module configuration
  */
   axios: {
     // See https://github.com/nuxt-community/axios-module#options
-    baseURL: 'https://hirex-staging-api.azurewebsites.net'
+    baseURL: 'https://hirex-dev-api.azurewebsites.net'
   },
   fontawesome: {
     imports: [
-        {
-          set: '@fortawesome/free-solid-svg-icons',
-          icons: ['fas']
-        },
+      {
+        set: '@fortawesome/free-solid-svg-icons',
+        icons: ['fas']
+      },
     ],
   },
   /*

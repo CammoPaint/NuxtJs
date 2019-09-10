@@ -34,7 +34,7 @@
 export default {
   methods: {
     imageUrl: function(imageId) {
-      return `https://hirex-staging-api.azurewebsites.net/images/${imageId}`;
+      return `https://hirex-dev-api.azurewebsites.net/images/${imageId}`;
     }
   },
   async asyncData({ app, params }) {

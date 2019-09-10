@@ -17,6 +17,10 @@ export default $axios => resource => ({
 
     delete(id) {
         return $axios.$delete(`/${resource}/${id}`)
-    }
+    },
+
+    find(query) {
+        return $axios.$get(`/${resource}${query}`)
+    },
 
 })
