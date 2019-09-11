@@ -2,6 +2,5 @@
     "appService.zipIgnorePattern": [
         ".vscode{,/**}"
     ],
-    "appService.defaultWebAppToDeploy": "/subscriptions/74c163ec-9cd1-4411-8794-1e7c96cacf96/resourceGroups/appsvc_linux_centralus/providers/Microsoft.Web/sites/Hirex-Nuxt",
     "appService.deploySubpath": ""
 }
