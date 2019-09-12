@@ -27,14 +27,12 @@
         </div>
       </div>
     </header>
-              
+
     <section class="features-icons text-center bg-light">
       <div class="container">
         <div class="row">
           <div class="col-lg-4" v-for="category of categories" :key="category.id">
-            <nuxt-link
-              :to="{ name: 'categories-id', params: { id: category.id }}"
-            >
+            <nuxt-link :to="{ name: 'categories-id', params: { id: category.id }}">
               <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3 text-primary">
                 <div class="features-icons-icon">
                   <font-awesome-icon :icon="category.icon" style="font-size: 60px" class="primary" />
@@ -140,30 +138,19 @@
       <section class="text-center mt-5">
         <h2 class="mb-4 pb-4 text-primary">Latest Blog Posts</h2>
         <div class="row">
-          <div class="col-lg-12">
-            <div class="row">
-              <div class="col-lg-3 col-md-6 mb-4" v-for="post of posts" :key="post.id">
-            <nuxt-link
-              :to="{ name: 'posts-id', params: { id: post.id }}"
-            >
-            <div class="card h-100">
+          <div class="col-lg-3 col-md-6 mb-4" v-for="post of posts" :key="post.id">
+            <nuxt-link :to="{ name: 'posts-id', params: { id: post.id }}">
+              <div class="card h-100">
                 <img class="card-img-top" :src="post.imageUrl" alt />
-              <div class="card-body">
-                <h4 class="card-title">
-                  {{post.title}}
-                </h4>
+                <div class="card-body">
+                  <h4 class="card-title">{{post.title}}</h4>
+                </div>
               </div>
-            </div>
             </nuxt-link>
           </div>
-            </div>
-            <!-- /.row -->
-          </div>
-          <!-- /.col-lg-9 -->
         </div>
       </section>
     </div>
-
   </div>
   <!-- /.container -->
 </template>
@@ -181,7 +168,7 @@ export default {
     return {
       categories: json.productCategories,
       products: await ctx.app.$repositories.products.index(),
-      posts: json.posts.slice(0,4)
+      posts: json.posts.slice(0, 4)
     };
   }
 };
