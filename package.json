@@ -5,10 +5,10 @@
   "author": "Cameron Moses",
   "private": true,
   "scripts": {
-    "dev": "nuxt",
-    "build": "nuxt build",
-    "start": "nuxt start",
-    "generate": "nuxt generate",
+    "dev": "node ./node_modules/nuxt/bin/nuxt dev",
+    "build": "node ./node_modules/nuxt/bin/nuxt build",
+    "start": "node ./node_modules/nuxt/bin/nuxt start",
+    "generate": "node ./node_modules/nuxt/bin/nuxt generate",
     "postinstall": "npm run build"
   },
   "dependencies": {
